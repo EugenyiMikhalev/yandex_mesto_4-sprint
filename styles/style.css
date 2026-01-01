@@ -4,6 +4,15 @@
 @import url("../blocks/header/__line/header__line.css");
 /* logo */
 @import url("../blocks/logo/logo.css");
+/* profile */
+@import url("../blocks/profile/profile.css");
+@import url("../blocks/profile/__avatar/profile__avatar.css");
+@import url("../blocks/profile/__info/profile__info.css");
+@import url("../blocks/profile/__name/profile__name.css");
+@import url("../blocks/profile/__edit-button/profile__edit-button.css");
+@import url("../blocks/profile/__occupation/profile__occupation.css");
+/* add-button */
+@import url("../blocks/add-button/add-button.css");
 
 body {
   background-color: #000;
