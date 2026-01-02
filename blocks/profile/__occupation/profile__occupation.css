@@ -1,0 +1,11 @@
+.profile__occupation {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+
+  color: #fff;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+}
