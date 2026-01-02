@@ -23,6 +23,13 @@
 @import url("../blocks/like-button/like-button.css");
 /* footer */
 @import url("../blocks/footer/footer.css");
+/* profiel-modal */
+@import url("../blocks/profile-modal/profile-modal.css");
+@import url("../blocks/profile-modal/__close-button/profile-modal__close-button.css");
+@import url("../blocks/profile-modal/__title/profile-modal__title.css");
+@import url("../blocks/profile-modal/__form/profile-modal__form.css");
+@import url("../blocks/profile-modal/__text-input/profile-modal__text-input.css");
+@import url("../blocks/profile-modal/__submit-button/profile-modal__submit-button.css");
 
 body {
   background-color: #000;

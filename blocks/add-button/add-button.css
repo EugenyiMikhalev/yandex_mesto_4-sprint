@@ -8,6 +8,13 @@
   border: 2px solid #fff;
 
   cursor: pointer;
+
+  color: #fff;
+}
+
+.add-button:hover {
+  color: rgba(255, 255, 255, 60%);
+  border-color: rgba(255, 255, 255, 60%);
 }
 
 @media screen and (max-width: 767px) {
