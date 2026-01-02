@@ -1,0 +1,9 @@
+.like-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.like-button:hover {
+  color: rgba(0, 0, 0, 50%);
+}
