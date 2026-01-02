@@ -21,6 +21,9 @@
 @import url("../blocks/element/__title/element__title.css");
 /* like-button */
 @import url("../blocks/like-button/like-button.css");
+/* footer */
+@import url("../blocks/footer/footer.css");
+
 body {
   background-color: #000;
   font-family: "Inter", sans-serif;
