@@ -43,7 +43,7 @@
             viewBox="0 0 10 10"
           >
             <path
-              fill="#fff"
+              fill="currentColor"
               d="M10 1.328 2.604 8.767 1.283 7.419 8.66 0zM0 10l1.962-.588L.585 8.083z"
             />
           </svg>
@@ -59,7 +59,7 @@
           viewBox="0 0 22 22"
         >
           <path
-            fill="#fff"
+            fill="currentColor"
             d="M22 9.778h-9.778V0H9.778v9.778H0v2.444h9.778V22h2.444v-9.778H22z"
           />
         </svg>
@@ -199,7 +199,21 @@
         </button>
       </div>
     </section>
+    <dialog class="profile-modal">
+      <button class="profile-modal__close-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 32 32" >
+        <path fill="currentColor" d="M32 28.8 19.2 16 32 3.2 28.8 0 16 12.8 3.2 0 0 3.2 12.8 16 0 28.8 3.2 32 16 19.2 28.8 32z"/>
+      </svg>
+      </button>
+      <span class="profile-modal__title">Редактировать профиль</span>
+      <form action="" class="profile-modal__form">
+        <input type="text" class="profile-modal__text-input" name="profile-modal__name-input">
+        <input type="text" class="profile-modal__text-input" name="profile-modal__occup-input">
+        <button class="profile-modal__submit-button" type="submit">Сохранить</button>
+      </form>
+    </dialog>
     <footer class="footer">&copy; 2020 Mesto Russia</footer>
+    <modal>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

@@ -12,6 +12,13 @@
   margin-bottom: 8px;
 
   cursor: pointer;
+
+  color: #fff;
+}
+
+.profile__edit-button:hover {
+  color: rgba(255, 255, 255, 60%);
+  border-color: rgba(255, 255, 255, 60%);
 }
 
 @media screen and (max-width: 767px) {

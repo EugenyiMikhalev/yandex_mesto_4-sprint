@@ -1,0 +1,27 @@
+.profile-modal__close-button {
+  color: #ffffff;
+  position: absolute;
+
+  top: -40px;
+  right: -40px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-modal__close-button:hover {
+  color: rgba(255, 255, 255, 60%);
+}
+
+@media screen and (max-width: 767px) {
+  .profile-modal__close-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .profile-modal__close-button {
+    right: -8px;
+    top: -36px;
+  }
+}

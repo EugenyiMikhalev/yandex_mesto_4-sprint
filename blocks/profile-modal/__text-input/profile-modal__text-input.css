@@ -1,0 +1,29 @@
+.profile-modal__text-input {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 20%);
+  height: 27px;
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0;
+
+  box-sizing: border-box;
+}
+
+.profile-modal__text-input:focus {
+  outline-color: rgb(141, 177, 244);
+}
+
+.profile-modal__text-input:nth-child(1) {
+  margin-bottom: 30px;
+}
+
+.profile-modal__text-input:nth-child(2) {
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-modal__text-input:nth-child(2) {
+    margin-bottom: 45px;
+  }
+}
