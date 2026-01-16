@@ -5,7 +5,7 @@
   background-color: #fff;
 
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto min-content;
   grid-template-rows: max-content auto;
   align-items: center;
 
@@ -13,11 +13,19 @@
   overflow: hidden;
 
   aspect-ratio: calc(282 / 361);
+
+  position: relative;
 }
 
 .element .like-button {
   margin-left: auto;
   margin-right: 20px;
+}
+
+.element .delete-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 @media screen and (max-width: 767px) {

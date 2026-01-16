@@ -1,4 +1,4 @@
-.profile-modal {
+.card-modal {
   background-color: #fff;
   flex-direction: column;
   border: none;
@@ -7,21 +7,22 @@
   padding: 34px 36px 37px;
 
   box-sizing: border-box;
+  width: 430px;
   max-width: 430px;
 
   overflow: visible;
 }
 
-.profile-modal:open {
+.card-modal:open {
   display: flex;
 }
 
-.profile-modal::backdrop {
+.card-modal::backdrop {
   background-color: rgba(0, 0, 0, 50%);
 }
 
 @media screen and (max-width: 767px) {
-  .profile-modal {
+  .card-modal {
     padding: 25px 22px;
     width: 282px;
   }

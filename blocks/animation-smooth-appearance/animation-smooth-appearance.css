@@ -1,0 +1,14 @@
+.animation-smooth-appearance {
+  animation: smooth-appearance 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes smooth-appearance {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
