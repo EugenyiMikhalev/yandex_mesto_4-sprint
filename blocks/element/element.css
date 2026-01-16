@@ -5,7 +5,7 @@
   background-color: #fff;
 
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto min-content;
   grid-template-rows: max-content auto;
   align-items: center;
 
