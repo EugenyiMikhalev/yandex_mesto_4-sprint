@@ -39,6 +39,13 @@
 @import url("../blocks/card-modal/__submit-button/card-modal__submit-button.css");
 /* delete-button */
 @import url("../blocks/delete-button/delete-button.css");
+/* image-popup */
+@import url("../blocks/image-popup/image-popup.css");
+@import url("../blocks/image-popup/__close-button/image-popup__close-button.css");
+@import url("../blocks/image-popup/__image/image-popup__image.css");
+@import url("../blocks/image-popup/__title/image-popup__title.css");
+/* animation-smooth-appearance */
+@import url("../blocks/animation-smooth-appearance/animation-smooth-appearance.css");
 
 body {
   background-color: #000;
