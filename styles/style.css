@@ -30,6 +30,15 @@
 @import url("../blocks/profile-modal/__form/profile-modal__form.css");
 @import url("../blocks/profile-modal/__text-input/profile-modal__text-input.css");
 @import url("../blocks/profile-modal/__submit-button/profile-modal__submit-button.css");
+/* card-modal */
+@import url("../blocks/card-modal/card-modal.css");
+@import url("../blocks/card-modal/__close-button/card-modal__close-button.css");
+@import url("../blocks/card-modal/__title/card-modal__title.css");
+@import url("../blocks/card-modal/__form/card-modal__form.css");
+@import url("../blocks/card-modal/__text-input/card-modal__text-input.css");
+@import url("../blocks/card-modal/__submit-button/card-modal__submit-button.css");
+/* delete-button */
+@import url("../blocks/delete-button/delete-button.css");
 
 body {
   background-color: #000;
