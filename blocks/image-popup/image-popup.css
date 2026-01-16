@@ -1,0 +1,27 @@
+.image-popup {
+  flex-direction: column;
+  border: none;
+
+  box-sizing: border-box;
+
+  overflow: visible;
+
+  max-width: 75vw;
+  max-height: 75vh;
+  background-color: transparent;
+
+  padding: 0;
+}
+
+.image-popup:open {
+  display: flex;
+}
+
+.image-popup::backdrop {
+  background-color: rgba(0, 0, 0, 50%);
+}
+
+@media screen and (max-width: 767px) {
+  .image-popup {
+  }
+}

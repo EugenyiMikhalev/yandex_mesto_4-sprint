@@ -80,7 +80,6 @@ const addCard = (card, where = "end") => {
   const cardTemplate = document.getElementById("card-template").content;
   const cardElement = cardTemplate.querySelector(".element").cloneNode(true);
   cardElement.setAttribute("id", `${crypto.randomUUID()}`);
-  console.log(cardElement);
   cardElement.querySelector(".element__image").src = card.link;
   cardElement.querySelector(".element__image").alt = card.name + " фото";
   cardElement.querySelector(".element__title").textContent = card.name;
@@ -119,6 +118,35 @@ const addCard = (card, where = "end") => {
   const deleteButton = cardElement.querySelector(".delete-button");
   deleteButton.addEventListener("click", () => {
     deleteCard(cardElement.id);
+  });
+
+  const image = cardElement.querySelector(".element__image");
+  image.addEventListener("click", () => {
+    const cardPopup = document.querySelector(".image-popup");
+    if (cardPopup.hasAttribute("open") && typeof cardPopup !== undefined) {
+      cardPopup.close();
+    } else if (typeof cardPopup !== undefined) {
+      cardPopup.querySelector(".image-popup__image").src =
+        cardElement.querySelector(".element__image").src;
+      cardPopup.querySelector(".image-popup__title").innerText = card.name;
+
+      cardPopup.showModal();
+    } else throw new Error("no image popup element");
+
+    const closePopupButton = cardPopup.querySelector(
+      ".image-popup__close-button"
+    );
+    closePopupButton.addEventListener("click", () => {
+      const keyFrame = new KeyframeEffect(cardPopup, [{ opacity: "0" }], {
+        duration: 300,
+        easing: "ease",
+        direction: "normal",
+      });
+
+      const animation = new Animation(keyFrame, document.timeline);
+      animation.play();
+      animation.onfinish = () => cardPopup.close();
+    });
   });
 };
 
