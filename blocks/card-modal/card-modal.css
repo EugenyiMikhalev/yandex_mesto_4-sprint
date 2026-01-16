@@ -1,0 +1,30 @@
+.card-modal {
+  background-color: #fff;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+
+  padding: 34px 36px 37px;
+
+  box-sizing: border-box;
+  width: 430px;
+  max-width: 430px;
+
+  position: relative;
+  overflow: visible;
+}
+
+.card-modal:open {
+  display: flex;
+}
+
+.card-modal::backdrop {
+  background-color: rgba(0, 0, 0, 50%);
+}
+
+@media screen and (max-width: 767px) {
+  .card-modal {
+    padding: 25px 22px;
+    width: 282px;
+  }
+}

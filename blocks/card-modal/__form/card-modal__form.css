@@ -1,0 +1,4 @@
+.card-modal__form {
+  display: flex;
+  flex-direction: column;
+}
